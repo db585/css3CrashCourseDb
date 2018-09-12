@@ -1,0 +1,212 @@
+
+/* reseting */
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+body {
+  background-color: #f4f4f4;
+  color: #555;
+
+  /* font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal; */
+
+  /* web safe fonts */
+  font: normal 16px Arial, Helvetica, sans-serif;
+  /*NOTE: Verdana, Tahoma, are nice 
+  Arial is Woindows standart
+  Helvetica is Unix and Mac standart*/
+
+  line-height: 1.6em;
+  margin: 0;
+}
+
+.container {
+  /*NOTE: responsive way */
+  width: 80%;
+  margin: auto;
+}
+
+.button {
+  background-color: #333;
+  color: #ffffff;
+  padding: 10px 5px;
+  border: none;
+}
+
+.button:hover {
+   background: red;
+   color: #ffffff;
+}
+
+/* The clear CSS property specifies whether an element can be next to floating elements that precede it or must be moved down (cleared) below them. The clear property applies to both floating and non-floating elements. */
+.clr {
+  clear: both;
+}
+
+.box-1 {
+  background-color: #333;
+  color: #fff;
+  border: 5px red solid;
+  /* border-width: 3px;
+  border-bottom-width: 10px;
+  border-top-style: double */
+
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.box-1 h1 {
+  font-family: Tahoma;
+  font-weight: 800;
+  font-style: italic;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  word-spacing: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: black
+}
+
+a:hover {
+  color:red;
+}
+
+a:active {
+  color: green;
+}
+
+a:visited {
+  /* color: black; */
+}
+
+.box-2 {
+  border: 3px dotted #ccc;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.categories {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 15px; 
+}
+
+.categories h2 {
+  text-align: center;
+}
+
+.categories ul {
+  padding: 0;
+  padding-left: 20px;
+  /* change li icon */
+  list-style: square;
+  list-style: none;
+}
+
+.categories li {
+  padding-bottom: 8px;
+  border-bottom: dotted 1px #333;
+  /*NOTE: check pic */
+  list-style-image: url('../img/check.png')  
+}
+
+.my-form {
+  padding: 20px;
+}
+
+.my-form .form-group {
+  padding-bottom: 15px; 
+}
+
+/*NOTE: labals are inline this put them on new line */
+.my-form label {
+   display: block;
+}
+
+/* NOTE: only Name and Email fields which are type="text" */
+.my-form input[type="text"], .my-form textarea {
+  padding: 7px;
+  width: 100%;
+}
+
+.block {
+   float: left;
+   width: 33.3%;
+   border: 1px solid #cccccc;
+   padding: 10px;
+   /* to make all three blocks are in one row 
+   The box-sizing CSS property defines how the user agent should calculate the total width and height of an element.
+   border-box tells the browser to account for any border and padding in the values you specify for an element's width and height. If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width.*/
+   box-sizing: border-box;
+}
+
+#main-block {
+  float: left;
+  width: 70%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+#sidebar {
+  float: right;
+  width: 30%;
+  background-color: #333;
+  color: #ffffff;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.p-box {
+  width: 800px;
+  height: 500px;
+  border: 1px solid black;
+  margin-top: 30px;
+  /* to start margining from p-box element and not start of whole dooument */
+  position: relative;
+  background-image: url('../img/bgimage.jpg');
+  background-position: 100px 200px;
+  background-repeat: no-repeat;
+  background-position: center top;
+
+}
+
+ .p-box h1 {
+  position: absolute;
+  top: 40px;
+  left: 200px;
+}
+
+.p-box h2{
+  position: absolute;
+  bottom: 40px;
+  right: 100px;
+}
+
+/* fixed button like social media links on sites */
+.fix-me {
+  position: fixed;
+  top: 400px;
+}
+
+/* li elemnenth style - pseudo elements css*/
+.my-list li:first-child{
+  background: red;
+}
+
+.my-list li:last-child{
+  background:blue;
+}
+
+.my-list li:nth-child(3){
+  background:yellow;
+}
+
+.my-list li:nth-child(even ){
+  background:grey;
+}
